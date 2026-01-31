@@ -29,8 +29,8 @@ The project tests model robustness across **two distinct liquid types**:
 
 | Dataset | Liquid Type | Training | Testing | Total | Visual Properties |
 |---------|------------|----------|---------|-------|-------------------|
-| **OR** | Orange Juice | 794 | 107 | 901 | Semi-transparent, orange (590-620nm) |
-| **RED** | Red Juice | 821 | 107 | 928 | More opaque, red (620-750nm) |
+| **OR** | Orange Juice | 794 | 107 | 901 | Semi-transparent, orange |
+| **RED** | Red Juice | 821 | 107 | 928 | More opaque, red |
 
 **Why Two Liquids?**
 This creates a controlled **visual domain shift** while keeping the measurement task identical. The model must learn to predict volumes regardless of liquid color/transparency - testing true understanding vs. memorization.
