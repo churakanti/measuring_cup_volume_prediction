@@ -317,20 +317,6 @@ def verify_dataset(base_path='BMC_NewResized'):
 verify_dataset()
 ```
 
-## Citation
-
-If you use this dataset in your research, please cite:
-
-```bibtex
-@dataset{measuring_cup_volume_2025,
-  title={Measuring Cup Volume Prediction Dataset},
-  author={[Your Name]},
-  year={2025},
-  publisher={[Publisher/Institution]},
-  note={Dataset for deep learning-based volume prediction from measuring cup images}
-}
-```
-
 ## License
 
 The dataset is released under the same license as the code (MIT License). See [LICENSE](../LICENSE) for details.
