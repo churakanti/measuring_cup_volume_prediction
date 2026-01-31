@@ -42,33 +42,14 @@ Due to GitHub's file size limitations, the dataset is hosted externally.
 
 ### Option 1: Google Drive (Recommended)
 
-**Download Link**: [Insert your Google Drive link here]
+**Download Link**: [(https://drive.google.com/drive/folders/10eL1VkEnKwgj-iKgzTuBZNbLM8RwGz5Y?usp=sharing)]
 
 **Steps**:
-1. Click the download link above
+1. Click the download link above after requested
 2. Download the archive file (`BMC_Dataset.zip` or similar)
 3. Extract to your project root directory
 4. Verify the structure matches the format below
 
-### Option 2: Alternative Hosting
-
-If the Google Drive link is unavailable, you can also download from:
-- **Zenodo**: [Insert Zenodo DOI link]
-- **Kaggle Datasets**: [Insert Kaggle link]
-- **Institutional Repository**: [Insert link if applicable]
-
-### Quick Download (Command Line)
-
-```bash
-# Using wget (Linux/macOS)
-wget https://your-hosted-url.com/BMC_Dataset.zip
-
-# Using curl (cross-platform)
-curl -O https://your-hosted-url.com/BMC_Dataset.zip
-
-# Extract
-unzip BMC_Dataset.zip
-```
 
 ## Dataset Structure
 
@@ -119,41 +100,12 @@ Images follow this naming pattern:
 - **Examples**:
   - `B100001.jpg` - Big measuring cup, 100 mL, image #1
   - `B450023.jpg` - Big measuring cup, 450 mL, image #23
-  - `S505012.jpg` - Small measuring cup (if applicable)
+  
 
 **Prefixes**:
 - `B` = Big Measuring Cup (BMC)
-- `S` = Small Measuring Cup (SMC)
 
-## Dataset Statistics
 
-### Volume Classes (22 total)
-
-| Class | Volume (mL) | Training Images | Test Images | Total |
-|-------|-------------|-----------------|-------------|-------|
-| 1     | 100         | ~36             | ~5          | ~41   |
-| 2     | 105         | ~36             | ~5          | ~41   |
-| 3     | 150         | ~36             | ~5          | ~41   |
-| 4     | 155         | ~36             | ~5          | ~41   |
-| 5     | 200         | ~36             | ~5          | ~41   |
-| 6     | 205         | ~36             | ~5          | ~41   |
-| 7     | 250         | ~36             | ~5          | ~41   |
-| 8     | 255         | ~36             | ~5          | ~41   |
-| 9     | 300         | ~36             | ~5          | ~41   |
-| 10    | 305         | ~36             | ~5          | ~41   |
-| 11    | 350         | ~36             | ~5          | ~41   |
-| 12    | 355         | ~36             | ~5          | ~41   |
-| 13    | 400         | ~36             | ~5          | ~41   |
-| 14    | 405         | ~36             | ~5          | ~41   |
-| 15    | 450         | ~36             | ~5          | ~41   |
-| 16    | 455         | ~36             | ~5          | ~41   |
-| 17    | 500         | ~36             | ~5          | ~41   |
-| 18    | 505         | ~36             | ~5          | ~41   |
-| 19    | 550         | ~36             | ~5          | ~41   |
-| 20    | 555         | ~36             | ~5          | ~41   |
-| 21    | 600         | ~36             | ~5          | ~41   |
-| 22    | 610         | ~36             | ~5          | ~41   |
-| **Total** |         | **~794**        | **~107**    | **~901** |
 
 ### Dataset Split
 - **Training**: ~88% (794 images)
