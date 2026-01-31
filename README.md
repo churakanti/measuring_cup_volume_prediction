@@ -1,7 +1,6 @@
 # Measuring Cup Volume Prediction using Deep Learning
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Keras](https://img.shields.io/badge/Keras-3.11+-red.svg)](https://keras.io/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15+-orange.svg)](https://www.tensorflow.org/)
 
