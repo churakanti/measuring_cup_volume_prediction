@@ -8,7 +8,7 @@ A comprehensive computer vision project for automated volume measurement predict
 
 ## 🎯 Project Overview
 
-This project implements two complementary approaches to predict liquid volume measurements from images of measuring cups:
+This project implements two complementary approaches topredict liquid volume measurements from images of measuring cups filled with **two different colored liquids** (red juice and orange juice), demonstrating cross-domain transfer learning:
 
 1. **EfficientNet Transfer Learning** - Direct volume regression using pre-trained EfficientNetB0/B3
 2. **ES(1+1) Evolutionary Strategy** - Automated hyperparameter optimization for custom CNN architectures
@@ -21,6 +21,19 @@ This project implements two complementary approaches to predict liquid volume me
 - **Robust Dataset**: 900+ images across 22 volume classes (100-610 mL)
 - **Multiple Views**: Front View (FV) and Bottom-Up View (BV) image perspectives
 - **Production Ready**: Clean, documented code with comprehensive guides
+
+### 🎨 Dataset Variants - Cross-Domain Learning
+
+The project tests model robustness across **two distinct liquid types**:
+
+| Dataset | Liquid Type | Training | Testing | Total | Visual Properties |
+|---------|------------|----------|---------|-------|-------------------|
+| **OR** | Orange Juice | 794 | 107 | 901 | Semi-transparent, orange color |
+| **RED** | Red Juice | 821 | 107 | 928 | More opaque, red color |
+
+**Why Two Liquids?** This creates a controlled **visual domain shift** while keeping the measurement task identical - demonstrating the model's ability to transfer knowledge across different visual appearances.
+
+**Cross-Domain Results**: Achieves 82% error reduction when transferring from orange juice to red juice predictions.
 
 ## 📊 Results
 
@@ -189,6 +202,10 @@ Related publications:
 ## 📊 Dataset
 
 The dataset consists of **900+ images** of measuring cups across **22 volume classes**.
+
+
+<img width="366" height="245" alt="image" src="https://github.com/user-attachments/assets/8246e856-3282-4035-888d-261ae9a5c055" />
+
 
 **Image Specifications**:
 - Format: JPG (converted from HEIC)
