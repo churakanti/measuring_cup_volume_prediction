@@ -25,16 +25,29 @@ The **Measuring Cup Volume Prediction Dataset** consists of **900+ high-quality 
 
 ### Dataset Variants
 
-This project includes two main dataset configurations:
+This project includes datasets with **TWO DIFFERENT LIQUID TYPES** for cross-domain transfer learning:
 
-1. **BMC_NewResized** (Primary)
-   - Organized by volume class
-   - ~794 training images, ~107 test images
-   - Used for EfficientNet transfer learning
+#### Liquid Types
 
-2. **BMC_OR** (Object Recognition variant)
-   - Alternative organization (FV/BV mixed in same folder)
-   - Used for ES(1+1) optimization experiments
+- **OR = Orange Juice**: Orange-colored liquid with semi-transparent appearance
+- **RED = Red Juice**: Red-colored liquid with more opaque appearance
+
+The dual-liquid approach creates a **controlled domain shift** (visual difference) while keeping the underlying task (volume measurement) identical.
+
+#### Dataset Configurations
+
+1. **BMC_NewResized** (Primary - Orange Juice Dataset)
+   - **Liquid type**: Orange juice (OR)
+   - 794 training images, 107 test images (901 total)
+
+2. **BMC_OR** (Orange Juice - Alternative Organization)
+   - **Liquid type**: Orange juice (OR)
+   - Alternative folder organization
+
+3. **BMC_RED** (Red Juice Dataset - if available)
+   - **Liquid type**: Red juice (RED)
+   - 821 training images, 107 test images (928 total)
+   - Used for cross-domain transfer experiments
 
 ## Download Instructions
 
@@ -185,6 +198,20 @@ print(train_df['label'].value_counts().sort_index())
 ```
 
 ## Data Collection
+
+### Liquid Types and Domain Shift Experiment
+
+Two distinct liquid types were recorded:
+
+**1. Orange Juice (OR Dataset)**
+- Visual: Semi-transparent, lighter orange appearance
+- Dataset: 901 images (794 train, 107 test)
+
+**2. Red Juice (RED Dataset)**
+- Visual: More opaque, darker red appearance
+- Dataset: 928 images (821 train, 107 test)
+
+**Purpose**: The color difference creates a **visual domain shift** for testing cross-domain transfer learning.
 
 ### Collection Process
 1. **Measurement Setup**: Precise volume measurements using calibrated measuring cups
