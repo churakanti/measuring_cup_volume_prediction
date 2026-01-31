@@ -118,13 +118,6 @@ measuring-cup-volume-prediction/
 ├── QUICKSTART_ES.md                   # ES quick start guide
 ├── ES_IMPLEMENTATION_SUMMARY.md       # Implementation details
 │
-├── BMC_NewResized/                    # Main dataset directory
-│   ├── training/                      # Training images (~794)
-│   ├── Testing/                       # Test images (~107)
-│   ├── training_labels.csv            # Training annotations
-│   ├── testing_labels.csv             # Test annotations
-│   └── edBMC_1.ipynb                  # Primary training notebook
-│
 ├── code/                              # Alternative implementations
 │   ├── BMC_Volume_Prediction.py       # EfficientNet Python script
 │   ├── ES_1plus1_optimization.py      # ES optimization script
