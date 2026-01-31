@@ -19,6 +19,23 @@ This project implements two distinct approaches to volume prediction:
 
 Both approaches are designed for the same task but offer different trade-offs in terms of performance, training time, and customizability.
 
+## Cross-Domain Transfer Learning
+
+A distinguishing feature of this project is testing across **two different liquid types**:
+
+| Dataset | Liquid Type | Color | Images |
+|---------|------------|-------|--------|
+| **OR** | Orange Juice | Orange | 901 |
+| **RED** | Red Juice | Red | 9 |
+
+**Research Question**: Can a model trained on orange juice accurately predict volumes for red juice?
+
+**Results**:
+- Same-domain (OR→OR): ~94% accuracy, ~15 mL MAE
+- Cross-domain (OR→RED): 82% error reduction after fine-tuning
+
+This demonstrates the model's ability to handle **visual domain shifts** while maintaining volume prediction accuracy.
+
 ## Approach 1: EfficientNet Transfer Learning
 
 ### Architecture Overview
